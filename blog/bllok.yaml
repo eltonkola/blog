@@ -1,0 +1,16 @@
+postsPerPage: 10
+baseUrl: "https://eltonkola.github.io/blog"
+
+websiteName: "Elton Kola - Blog"
+websiteDescription: "A solitary blog of a developer."
+
+feedEmail: "eltonkola+blog@gmail.com"
+feedEmailRealName: "Elton Kola"
+
+socials:
+  - "http://eltonkola.com"
+  - "https://github.com/eltonkola"
+  - "https://linkedin.com/in/eltonkola"
+
+websiteCopyright: "Made with ❤️ by Elton Kola ©"
+language: "en-US"
