@@ -21,7 +21,6 @@ jobs:
           template: tema
           input: blog
           output: public
-          rootpath: blog
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
