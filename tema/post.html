@@ -2,26 +2,33 @@
     <article class="article-container">
         <div class="article-header">
             <div class="breadcrumb">
-                <a href="#">Home</a> › <a href="#">Decision Making</a> › Mental Models
+                
+                
+                <a href="#">Home</a> ›
+                {{ for nav in navs }}
+                <a href="{{ nav.link }}">{{ nav.name }}</a> ›
+                {{ endfor }}
+
+            
             </div>
             
             <div class="article-meta">
-                <span class="article-category">Decision Making</span>
+                <span class="article-category">{{ post.category }}</span>
                 <span>•</span>
                 <span>{{ post.date }}</span>
                 <span>•</span>
-                <span>12 min read</span>
+                <span>10 min read</span>
             </div> 
             
             <h1 class="article-title">{{ post.title }}</h1>
             
-            <p class="article-subtitle">We navigate life using mental models—simplified representations of complex reality. But when we mistake our models for reality itself, we make costly errors. Understanding this fundamental principle can transform how you think about everything from investing to relationships.</p>
+            <!-- <p class="article-subtitle">We navigate life using mental models—simplified representations of complex reality. But when we mistake our models for reality itself, we make costly errors. Understanding this fundamental principle can transform how you think about everything from investing to relationships.</p> -->
         
             <div class="author-info">
                 <div class="author-avatar">EK</div>
                 <div class="author-details">
                     <div class="author-name">Elton Kola</div>
-                    <div class="author-bio">Writer focused on decision-making and mental models</div>
+                    <div class="author-bio">Bad blog writer, owner of this blog</div>
                 </div>
             </div>
         </div>
