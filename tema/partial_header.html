@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ websiteName }}</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lite-youtube-embed/0.3.2/lite-yt-embed.min.css">
+    <link rel="stylesheet" href="{{ rootPath }}/style.css" />
+    <link rel="stylesheet" href="{{ rootPath }}/article.css" />
+    <meta name="description" content="{{ websiteDescription }}">
+
+</head>
+<body>
+    <div class="progress-container">
+        <div class="progress-bar" id="progress-bar"></div>
+    </div>
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="{{ rootPath }}/index.html" class="logo">Elton Kola</a>
+                <nav class="nav">
+                    <a href="{{ rootPath }}/">Home</a>
+                    {{ for page in pages }}
+                    <a href="{{ page.link }}">{{ page.name }}</a>
+                    {{ endfor }}
+                    
+                </nav>
+            </div>
+        </div>
+    </header>
+

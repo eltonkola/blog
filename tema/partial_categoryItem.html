@@ -1,10 +1,17 @@
- <li class="relative pl-5">
-     <span class="absolute left-0 text-gray-500">▸</span>
-     <a href="{{ this.link }}" class="hover:underline">{{ this.name }} ({{ this.count}})</a>
-     <ul class="ml-5 mt-1 space-y-1 list-none">
-         {{ for subcategory in this.subCategories }}
-         {{ partial categoryItem with subcategory }}
-         {{ endfor }}
-     </ul>
- </li>
+<li class="category-item">
+  <a href="#" class="category-link">
+      <span><span class="category-chevron">›</span>{{ this.name }}</span>
+      <span class="post-count">{{ this.count}}</span>
+  </a>
+  {{ if this.subCategories }}
+  <ul class="subcategory">
+
+    {{ for subcategory in this.subCategories }}
+      {{ partial categoryItem with subcategory }}
+      {{ endfor }}
+
+  </ul>
+  {{ endif }}
+</li>
+
 

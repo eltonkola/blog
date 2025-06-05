@@ -1,0 +1,23 @@
+
+  <footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-links">
+              {{ for social in socials }}
+                <a href="{{ social.url }}">{{ social.name }}</a>
+              {{ endfor }}
+            </div>
+            <p class="footer-text">{{ websiteCopyright }}</p>
+
+            <!-- <a href="/rss.xml">RSS</a> -->
+
+        </div>
+    </div>
+</footer>
+
+<script src="{{ rootPath }}/script.js"></script> (Local script)
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script> (CDN for Prism JS)
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lite-youtube-embed/0.3.2/lite-yt-embed.min.js"></script> (CDN for Lite YouTube Embed JS)
+
+</body>
+</html>

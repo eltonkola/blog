@@ -5,8 +5,6 @@ date: 2025-06-02
 category: "meta"
 ---
 
-## Welcome Back
-
 The good news? I finally have a blog again.  
 The bad news? It’s probably my seventh or eighth attempt—and if history is any guide, my blogs tend to fade away, lost somewhere between memory and markdown files.
 

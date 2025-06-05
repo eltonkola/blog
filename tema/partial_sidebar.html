@@ -1,0 +1,15 @@
+<aside class="sidebar">
+  <div class="sidebar-section">
+      <h3>Topics</h3>
+      <ul class="category-tree">
+         
+        {{ for category in categories }}
+        {{ partial categoryItem with category }}
+        {{ endfor }}
+
+
+               
+          
+      </ul>
+  </div>
+</aside>
